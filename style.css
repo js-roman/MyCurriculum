@@ -38,7 +38,8 @@ main {
 }
 
 .foto img {
-    height: 150px;
+    height: 250px;
+    margin: -50px;
     rotate: -45deg;
 }
 
