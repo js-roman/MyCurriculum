@@ -9,7 +9,8 @@
 }
 
 main {
-    /* height: 90vh; */
+    /* height: 100%; */
+    width: 100%;
     display: flex;
     flex-basis: 40% 60%;
     padding: 15px;
@@ -17,7 +18,7 @@ main {
 }
 
 .left {
-    width: 30%;
+    /* width: 30%; */
     padding: 10px 25px 70px 10px;
     display: flex;
     flex-direction: column;
@@ -28,7 +29,7 @@ main {
 }
 
 .right {
-    width: 70%;
+    /* width: 70%; */
     padding: 20px 20px 70px 10px;
     display: flex;
     flex-direction: column;
@@ -102,13 +103,6 @@ h4 {
     margin: 10px;
 }
 
-.education,
-.experience,
-.knolidge {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-}
-
 .section {
     display: grid;
     grid-template-columns: 1fr 2fr;
@@ -152,7 +146,42 @@ h4 {
     text-decoration: underline;
 }
 
-@media (max-width: 850px) {
+
+/* md */
+
+@media (max-width: 1200px) {
+    h1 {
+        font-size: 26px;
+    }
+    h2 {
+        font-size: 20px;
+    }
+    h3,
+    h4 {
+        font-size: 18px;
+    }
+}
+
+
+/* sm */
+
+@media (max-width: 992px) {
+    .left {
+        background: radial-gradient(circle at top left, transparent 70px, rgb(194, 233, 184) 70px) top left, radial-gradient(circle at top right, transparent 70px, rgb(194, 233, 184) 70px) top right;
+        background-size: 50% 100%;
+        background-repeat: no-repeat;
+    }
+    .right {
+        background: radial-gradient(circle at bottom left, transparent 70px, rgb(237, 241, 235) 70px) bottom left, radial-gradient(circle at bottom right, transparent 70px, rgb(237, 241, 235) 70px) bottom right;
+        background-size: 50% 100%;
+        background-repeat: no-repeat;
+    }
+}
+
+
+/* smartfones xs */
+
+@media (max-width: 768px) {
     h1 {
         font-size: 20px;
     }
